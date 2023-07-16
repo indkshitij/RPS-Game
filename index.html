@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="leftHeader">
+          <h1>ROCK PAPER SCISSOR</h1>
+        </div>
+        <div class="rightheader">
+          <div class="scoreContainer">
+            <h5>YOUR<br />SCORE</h5>
+            <h1 id="userScore">0</h1>
+          </div>
+          <div class="scoreContainer">
+            <h5>COMPUTER<br />SCORE</h5>
+            <h1 id="computerScore">0</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stone Paper Scissor Button -->
+      <div class="btnContainer">
+        <button class="block" id="rock" value="Rock">
+          <i class="fa-solid fa-hand-fist"></i>
+        </button>
+        <button class="block" id="paper" value="Paper">
+          <i class="fa-solid fa-hand"></i>
+        </button>
+        <button class="block" id="scissor" value="Scissor">
+          <i class="fa-solid fa-hand-scissors"></i>
+        </button>
+      </div>
+
+      <!-- Score Viewer -->
+      <div class="scoreView" id="scoreView">
+        <div class="choiceContainer" id="userChoiceDisplay">
+          <h4>YOUR CHOICE</h4>
+          <div>
+            <button class="rockBtnChoice" id="rockBtnChoice">
+              <i class="fa-solid fa-hand-fist"></i>
+            </button>
+            <button class="paperBtnChoice" id="paperBtnChoice">
+              <i class="fa-solid fa-hand"></i>
+            </button>
+            <button class="scissorBtnChoice" id="scissorBtnChoice">
+              <i class="fa-solid fa-hand-scissors"></i>
+            </button>
+          </div>
+        </div>
+        <div class="resultContainer">
+          <h1 id="result"></h1>
+          <button id="restart">
+            <i class="fa-solid fa-repeat"></i> RESTART
+          </button>
+        </div>
+        <div class="choiceContainer" id="computerChoiceDisplay">
+          <h4>COMPUTER CHOICE</h4>
+          <div>
+            <button class="rockCompBtnChoice" id="rockCompBtnChoice">
+              <i class="fa-solid fa-hand-fist"></i>
+            </button>
+            <button class="paperCompBtnChoice" id="paperCompBtnChoice">
+              <i class="fa-solid fa-hand"></i>
+            </button>
+            <button class="scissorCompBtnChoice" id="scissorCompBtnChoice">
+              <i class="fa-solid fa-hand-scissors"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
