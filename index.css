@@ -224,7 +224,7 @@ body {
 }
 @media (min-width: 600px) and (max-width: 900px) {
   .container {
-    padding: 3vh 2vw;
+    padding: 2vh 2vw;
   }
   .scoreContainer {
     width: 14vw;
@@ -256,7 +256,7 @@ body {
 }
 @media (min-width: 350px) and (max-width: 600px) {
   .container {
-    padding: 3vh 2vw;
+    padding: 2vh 2vw;
   }
   .header {
     padding: 1.5vh 2vw;
